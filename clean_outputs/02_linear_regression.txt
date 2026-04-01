@@ -1,0 +1,22 @@
+LINEAR REGRESSION ANALYSES
+Run: 2026-04-01 15:06:02 
+
+Analytic N: 3296
+
+--- MODEL 1: RHR only (+ W1/W2 baseline, age, sex, site) ---
+  Total Internalizing       b= 0.5902 [ 0.3051,  0.8753]  SE=0.1454  t=  4.059  p= 0.0001  N=3296  R2=0.3717
+  Withdrawn/Depressed       b= 0.3936 [ 0.2252,  0.5620]  SE=0.0859  t=  4.583  p= 0.0000  N=3296  R2=0.2321
+  Anxious/Depressed         b= 0.1717 [ 0.0214,  0.3220]  SE=0.0766  t=  2.240  p= 0.0251  N=3296  R2=0.2498
+  Somatic Complaints        b= 0.1658 [ 0.0021,  0.3295]  SE=0.0835  t=  1.986  p= 0.0471  N=3296  R2=0.2223
+
+--- MODEL 2: RHR + CSE (+ W1/W2 baseline, age, sex, site) ---
+  Total Internalizing       b= 0.5762 [ 0.2910,  0.8614]  SE=0.1455  t=  3.961  p= 0.0001  N=3296  R2=0.3725
+  Withdrawn/Depressed       b= 0.3850 [ 0.2165,  0.5535]  SE=0.0859  t=  4.480  p= 0.0000  N=3296  R2=0.2332
+  Anxious/Depressed         b= 0.1588 [ 0.0085,  0.3090]  SE=0.0766  t=  2.072  p= 0.0383  N=3296  R2=0.2525
+  Somatic Complaints        b= 0.1572 [-0.0066,  0.3210]  SE=0.0835  t=  1.882  p= 0.0600  N=3296  R2=0.2235
+
+--- CSE coefficients from Model 2 ---
+  Total Internalizing       b= 0.3106 [ 0.0235,  0.5977]  SE=0.1464  t=  2.121  p= 0.0340  N=3296  R2=0.3725
+  Withdrawn/Depressed       b= 0.1817 [ 0.0122,  0.3512]  SE=0.0864  t=  2.102  p= 0.0356  N=3296  R2=0.2332
+  Anxious/Depressed         b= 0.2644 [ 0.1133,  0.4155]  SE=0.0771  t=  3.431  p= 0.0006  N=3296  R2=0.2525
+  Somatic Complaints        b= 0.1838 [ 0.0193,  0.3483]  SE=0.0839  t=  2.191  p= 0.0285  N=3296  R2=0.2235

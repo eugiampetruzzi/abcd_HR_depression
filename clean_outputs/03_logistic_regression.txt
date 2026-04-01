@@ -1,0 +1,27 @@
+LOGISTIC REGRESSION ANALYSES
+Run: 2026-04-01 15:06:21 
+
+Analytic N: 3296
+
+=== PRIMARY: Total Internalizing ===
+  M1 — RHR only             OR=1.2694 [1.0686, 1.5079]  p= 0.0066  N=3296  ev=168(5.1%)  NagR2=0.2383
+  M2 — RHR + CSE            OR=1.2546 [1.0556, 1.4912]  p= 0.0100  N=3296  ev=168(5.1%)  NagR2=0.2456
+  OR attenuation M1->M2: 1.2694 -> 1.2546 (5.5%)
+
+=== SECONDARY: Subscale Outcomes ===
+  Withdrawn/Depressed         OR=1.2752 [1.0830, 1.5015]  p= 0.0035  N=3225  ev=178(5.5%)  NagR2=0.1789
+  Anxious/Depressed           OR=1.2081 [0.9998, 1.4596]  p= 0.0502  N=3233  ev=145(4.5%)  NagR2=0.2490
+  Somatic Complaints          OR=1.1665 [0.9623, 1.4140]  p= 0.1168  N=3167  ev=129(4.1%)  NagR2=0.1831
+
+=== AUC — NESTED MODEL COMPARISON ===
+AUC sample: N=3296, events=168 (5.1%)
+
+  MA (W1+W2 + age + sex + site):  AUC=0.8341 [0.8042, 0.8640]
+  MB (MA + CSE):                  AUC=0.8386 [0.8093, 0.8678]  DeLong vs MA: p=0.085
+  MC (MB + RHR):                  AUC=0.8419 [0.8130, 0.8708]  DeLong vs MB: p=0.186
+
+  5-fold CV AUC (full model): 0.8121 (SD=0.0189, range=0.7918-0.8347)
+
+=== LINEARITY CHECK: Restricted Cubic Spline (4 knots) ===
+  Nonlinearity test for RHR: p = 0.8814
+

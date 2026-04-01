@@ -1,0 +1,36 @@
+SYMPTOM PROFILE OF INCIDENT CASES
+Run: 2026-04-01 15:56:04 
+
+Analytic N: 3296  |  Incident cases: 168 (5.1%)
+
+Incident subsample N = 168
+
+--- Subscale elevation pattern (T >= 65 at Wave 3) ---
+# A tibble: 7 × 3
+  pattern                 n   pct
+  <chr>               <int> <dbl>
+1 Withdrawn + Anxious    44  26.2
+2 Anxious only           30  17.9
+3 All three              29  17.3
+4 Withdrawn only         21  12.5
+5 Anxious + Somatic      15   8.9
+6 Somatic only           15   8.9
+7 Withdrawn + Somatic    14   8.3
+
+  Any Withdrawn/Depressed elevation: 108 (64.3%)
+  Any Anxious/Depressed elevation:   118 (70.2%)
+  Any Somatic Complaints elevation:  73 (43.5%)
+
+--- Mean Wave 3 subscale T-scores (incident cases) ---
+# A tibble: 1 × 7
+      N Withdrawn_M Withdrawn_SD Anxious_M Anxious_SD Somatic_M Somatic_SD
+  <int>       <dbl>        <dbl>     <dbl>      <dbl>     <dbl>      <dbl>
+1   168        66.8         7.68      66.4       6.91      63.5       7.32
+
+--- Dominant subscale (highest Wave 3 T-score) ---
+# A tibble: 3 × 3
+  dominant      n   pct
+  <chr>     <int> <dbl>
+1 Anxious      65  38.7
+2 Somatic      36  21.4
+3 Withdrawn    67  39.9

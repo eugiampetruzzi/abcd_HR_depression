@@ -1,0 +1,66 @@
+SPECIFICITY ANALYSES
+Run: 2026-04-01 15:06:36 
+
+Analytic N: 3296
+
+=== EXTERNALIZING SPECIFICITY ===
+  Total Externalizing             OR=1.0793 [0.7642, 1.5242]  p= 0.6648  N=3247  ev=44
+  Attention Problems              OR=1.0510 [0.8386, 1.3172]  p= 0.6660  N=3186  ev=105
+  Rule-Breaking                   OR=1.1276 [0.7675, 1.6567]  p= 0.5406  N=3259  ev=40
+  Aggressive Behavior             OR=1.1672 [0.8469, 1.6087]  p= 0.3448  N=3234  ev=47
+
+=== PUBERTAL DEVELOPMENT (PDS) CONTROL ===
+  PDS coverage: 3294 / 3296 (99.9%)
+
+  Withdrawn/Depressed no PDS      OR=1.2750 [1.0828, 1.5012]  p= 0.0036  N=3223  ev=178
+  Withdrawn/Depressed +PDS        OR=1.2748 [1.0826, 1.5011]  p= 0.0036  N=3223  ev=178
+  -> OR attenuation: 1.2750 -> 1.2748 (0.1%)
+
+  Anxious/Depressed no PDS        OR=1.2080 [0.9998, 1.4596]  p= 0.0502  N=3231  ev=145
+  Anxious/Depressed +PDS          OR=1.2055 [0.9976, 1.4568]  p= 0.0530  N=3231  ev=145
+  -> OR attenuation: 1.2080 -> 1.2055 (1.2%)
+
+  Somatic Complaints no PDS       OR=1.1664 [0.9622, 1.4139]  p= 0.1169  N=3165  ev=129
+  Somatic Complaints +PDS         OR=1.1680 [0.9632, 1.4163]  p= 0.1144  N=3165  ev=129
+  -> OR attenuation: 1.1664 -> 1.1680 (-0.9%)
+
+=== MVPA CONTROL ===
+  MVPA coverage: 3296 / 3296
+
+  Total Int — no MVPA           OR=1.2546 [1.0556, 1.4912]  p= 0.0100  N=3296  ev=168
+  Total Int — +MVPA             OR=1.2546 [1.0516, 1.4968]  p= 0.0118  N=3296  ev=168
+  MVPA OR=0.9999  p=0.9996
+  RHR OR: 1.2546 -> 1.2546 (0.0% attenuation)
+
+=== EARLY LIFE ADVERSITY (ELA) CONTROL ===
+  ELA coverage: 2558 / 3296 (77.6%)
+
+  Total Int — no ELA            OR=1.2585 [1.0328, 1.5334]  p= 0.0226  N=2558  ev=128
+  Total Int — +ELA              OR=1.2483 [1.0232, 1.5229]  p= 0.0288  N=2558  ev=128
+  ELA OR=1.8786  p=0.0065
+  RHR OR: 1.2585 -> 1.2483 (3.9% attenuation)
+
+=== LPA — WAVE 3 INTERNALIZING SUBSCALE PROFILES ===
+LPA N: 3296
+
+LPA fit statistics:
+# A tibble: 3 × 5
+  Classes  LogLik    AIC    BIC Entropy
+    <dbl>   <dbl>  <dbl>  <dbl>   <dbl>
+1       2 -28323. 56665. 56726.   0.972
+2       3 -28321. 56670. 56756.   0.428
+3       4 -27590. 55217. 55327.   0.591
+
+Best K by BIC: 4
+
+Profile means:
+# A tibble: 3 × 7
+  profile     N   pct    RHR  With   Anx   Som
+    <dbl> <int> <dbl>  <dbl> <dbl> <dbl> <dbl>
+1       1  2708  82.2 -0.05   52.0  50.6  52.7
+2       2   418  12.7  0.072  57.1  58.1  57.2
+3       3   170   5.2  0.284  63.8  68.6  60.2
+
+RHR predicting profile membership (vs lowest-severity profile):
+  Profile 2 vs 1: OR_rhr=0.9721 [0.8684,1.0882]  p=0.6232  N=3296
+  Profile 3 vs 1: OR_rhr=1.2397 [1.0424,1.4744]  p=0.0151  N=3296

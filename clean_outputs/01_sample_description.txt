@@ -1,0 +1,43 @@
+SAMPLE DESCRIPTION & ATTRITION
+Run: 2026-04-01 15:05:48 
+
+Full Y2 CBCL roster: N = 10896 
+
+--- Exclusion funnel from Y2 CBCL (N = 10896 ) ---
+  No valid Fitbit RHR:            N =  4193  (38.5%)
+  Missing CBCL Y4:                N =  3142  (28.8%)
+  Clinical elevation Y2 (T>=65):  N =   269  ( 2.5%)
+  Final analytic sample:          N =  3292  (30.2%)
+
+--- % of total exclusions ---
+  Fitbit filter:         55.1%
+  Missing Y4 CBCL:       41.3%
+  Y2 clinical elevation:  3.5%
+
+--- INCLUDED vs. EXCLUDED: Race/Ethnicity ---
+# A tibble: 5 × 3
+  race_f            `Excluded (N=7604)` `Included (N=3292)`
+  <fct>             <chr>               <chr>              
+1 White             3859 (50.8%)        1972 (59.9%)       
+2 Black/AA          1261 (16.6%)        287 (8.7%)         
+3 Hispanic          1519 (20.0%)        625 (19.0%)        
+4 Asian             151 (2.0%)          79 (2.4%)          
+5 Other/Multiracial 813 (10.7%)         329 (10.0%)        
+Chi-square: chi2(4) = 140.07, p < .001
+
+--- Income ---
+# A tibble: 2 × 3
+  group                 M    SD
+  <chr>             <dbl> <dbl>
+1 Excluded (N=7604)  7.27  2.5 
+2 Included (N=3292)  7.79  2.06
+t(7400) = -11.26, p < .001
+
+--- Parental Education ---
+# A tibble: 2 × 3
+  group                 M    SD
+  <chr>             <dbl> <dbl>
+1 Excluded (N=7604)  16.6  2.77
+2 Included (N=3292)  17.0  2.51
+t(6840) = -8.69, p < .001
+

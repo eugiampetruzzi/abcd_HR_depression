@@ -1,0 +1,49 @@
+JOINT PREDICTOR ANALYSES
+Run: 2026-04-01 15:56:03 
+
+Analytic N: 3296
+
+=== PRIMARY INTERNALIZING OUTCOMES ===
+
+  Total Internalizing *       N=3296  ev=168(5.1%)
+    RHR: OR=1.2546 [1.0556,1.4912]  p=0.0100
+    CSE: OR=1.2566 [1.0825,1.4586]  p=0.0027
+
+  Withdrawn/Depressed         N=3225  ev=178(5.5%)
+    RHR: OR=1.2752 [1.0830,1.5015]  p=0.0035
+    CSE: OR=1.1256 [0.9639,1.3144]  p=0.1349
+
+  Anxious/Depressed           N=3233  ev=145(4.5%)
+    RHR: OR=1.2081 [0.9998,1.4596]  p=0.0502
+    CSE: OR=1.2478 [1.0603,1.4685]  p=0.0077
+
+  Somatic Complaints          N=3167  ev=129(4.1%)
+    RHR: OR=1.1665 [0.9623,1.4140]  p=0.1168
+    CSE: OR=1.2631 [1.0657,1.4972]  p=0.0071
+
+=== EXTERNALIZING OUTCOMES (specificity check) ===
+
+  Total Externalizing         N=3247  ev=44(1.4%)
+    RHR: OR=1.0793 [0.7642,1.5242]  p=0.6648
+    CSE: OR=1.2748 [0.9749,1.6669]  p=0.0760
+
+  Rule-Breaking               N=3259  ev=40(1.2%)
+    RHR: OR=1.1276 [0.7675,1.6567]  p=0.5406
+    CSE: OR=1.4408 [1.0837,1.9156]  p=0.0120
+
+  Aggressive Behavior         N=3234  ev=47(1.5%)
+    RHR: OR=1.1672 [0.8469,1.6087]  p=0.3448
+    CSE: OR=1.2644 [0.9708,1.6469]  p=0.0819
+
+=== SUMMARY TABLE ===
+# A tibble: 7 × 11
+  outcome    or_rhr ci_lo_rhr ci_hi_rhr  p_rhr or_cse ci_lo_cse ci_hi_cse  p_cse
+  <chr>       <dbl>     <dbl>     <dbl>  <dbl>  <dbl>     <dbl>     <dbl>  <dbl>
+1 Total Int…   1.25     1.06       1.49 0.01     1.26     1.08       1.46 0.0027
+2 Withdrawn…   1.28     1.08       1.50 0.0035   1.13     0.964      1.31 0.135 
+3 Anxious/D…   1.21     1.000      1.46 0.0502   1.25     1.06       1.47 0.0077
+4 Somatic C…   1.17     0.962      1.41 0.117    1.26     1.07       1.50 0.0071
+5 Total Ext…   1.08     0.764      1.52 0.665    1.27     0.975      1.67 0.076 
+6 Rule-Brea…   1.13     0.768      1.66 0.541    1.44     1.08       1.92 0.012 
+7 Aggressiv…   1.17     0.847      1.61 0.345    1.26     0.971      1.65 0.0819
+# ℹ 2 more variables: n <dbl>, n_ev <dbl>
