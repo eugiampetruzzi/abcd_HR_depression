@@ -1,21 +1,8 @@
-# abcd_HR_depression
+**Leveraging Passive Wearables for Early Detection of Psychopathology: Resting Heart Rate Predicts the Development of Internalizing Problems in Adolescence**
 
-**Resting Heart Rate as an Early Warning Signal for Adolescent Depression Onset: Evidence from the ABCD Study**
+Eugenia Giampetruzzi, Jean Rachel Bahk, Chase Antonacci, Ian H. Gotlib
 
-Eugenia Giampetruzzi — Stanford University (PI: Ian Gotlib)
-
----
-
-## Repository Structure
-
-```
-clean_scripts/    ← Analysis scripts (one per Methods section)
-clean_outputs/    ← Corresponding text output from each script
-```
-
----
-
-## Scripts
+## scripts
 
 | Script | Analysis |
 |--------|----------|
@@ -29,7 +16,7 @@ clean_outputs/    ← Corresponding text output from each script
 
 ---
 
-## Data
+## data
 
 Data are from the **ABCD Study Release 5.1** and are not included in this repository (access requires a signed Data Use Certificate via the NIMH Data Archive).
 
@@ -42,9 +29,9 @@ Data are from the **ABCD Study Release 5.1** and are not included in this reposi
 
 ---
 
-## Key Variables
+## key variables
 
-| Variable | Description |
+| variable | description |
 |----------|-------------|
 | `rhr_z` | Standardized Wave 2 RHR (mean across ≥ 3 valid Fitbit weeks) |
 | `stress_z` | Standardized Current Stress Exposure Index (life events, peer victimization, family conflict, neighborhood safety) |
@@ -55,7 +42,7 @@ Data are from the **ABCD Study Release 5.1** and are not included in this reposi
 
 ---
 
-## Notes
+## notes
 
 - All models control for Wave 1 and Wave 2 CBCL T-scores, age at Wave 2, sex, and recruitment site.
 - Fitbit quality filter: `fit_ss_meet_abcd_rule == 1`, ≥ 3 valid weeks, RHR 40–120 bpm.
@@ -64,6 +51,6 @@ Data are from the **ABCD Study Release 5.1** and are not included in this reposi
 
 ---
 
-## Contact
+## contact
 
-Eugenia Giampetruzzi | eugiampetruzzi@stanford.edu | Stanford University
+Eugenia Giampetruzzi | eugiampetruzzi@stanford.edu 
