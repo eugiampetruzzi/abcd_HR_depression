@@ -4,7 +4,7 @@ Eugenia Giampetruzzi, Jean Rachel Bahk, Chase Antonacci, Ian H. Gotlib
 
 ## scripts
 
-| Script | Analysis |
+| script | analysis |
 |--------|----------|
 | `01_sample_description.R` | Exclusion funnel, attrition analysis, included vs. excluded demographic comparison |
 | `02_linear_regression.R` | OLS regression: Wave 2 RHR → continuous Wave 3 internalizing T-scores (Total + 3 subscales; with and without CSE) |
