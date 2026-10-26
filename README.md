@@ -13,25 +13,16 @@ Eugenia Giampetruzzi, Jean Rachel Bahk, Chase Antonacci, Ian H. Gotlib
 | `05_reclassification.R` | Continuous NRI: RHR above CSE model; events vs. non-events decomposition; standalone RHR-only, CSE-only, and combined comparisons vs. baseline |
 | `06_joint_predictors.R` | Joint RHR + CSE models across all internalizing and externalizing outcomes simultaneously |
 | `07_incident_profiling.R` | Symptom profile of incident cases: subscale elevation patterns (T ≥ 65), frequencies, mean T-scores, dominant dimension |
-
-### revision (`rr2_revision/`)
-
-Final analyses use the strict new-onset sample: CBCL Total Internalizing T < 65 at both Wave 1 and Wave 2 (N = 3,123; 133 onsets), family-clustered standard errors, and family-grouped 5-fold CV repeated 50 times. These scripts supersede `clean_scripts/` for all reported results.
-
-| script | analysis |
-|--------|----------|
-| `rr2_strict_pipeline.R` | Sample, linear and logistic models, AUC/DeLong, CV, calibration, cNRI, externalizing specificity, robustness (PDS, MVPA, ELA), Table 1 |
-| `rr2_strict_figures.R` | Figures 2–4 |
-| `cse_components.R` | Individual CSE components (Table S3) |
-| `supp_extra.R` | Supplementary results (attenuation, ELA reclassification, Table S2 operating points) |
-
-Outputs are the matching `.txt` files.
+| `rr2_revision/rr2_strict_pipeline.R` | Revised analyses (T < 65 at Waves 1 and 2) |
+| `rr2_revision/rr2_strict_figures.R` | Figures 2–4 |
+| `rr2_revision/cse_components.R` | CSE components (Table S3) |
+| `rr2_revision/supp_extra.R` | Supplementary results |
 
 ---
 
 ## data
 
-Data are from the **ABCD Study Release 5.1.1** (https://doi.org/10.82525/wjkw-bp63) and are not included in this repository (access requires a signed Data Use Certificate via the NBDC Data Hub).
+Data are from the **ABCD Study Release 5.1** and are not included in this repository (access requires a signed Data Use Certificate via the NBDC Data Hub).
 
 - Fitbit weekly data: `nt_y_fitb_act_w.csv`
 - CBCL mental health: `mh_p_cbcl.csv`
