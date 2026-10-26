@@ -1,4 +1,4 @@
-<img width="468" height="109" alt="image" src="https://github.com/user-attachments/assets/6fd60d45-2059-4759-b727-22c3dcf4456a" />**Passive sensing of resting heart rate predicts the onset of anxious and depressive symptoms in adolescents**
+**Passive sensing of resting heart rate predicts the onset of anxious and depressive symptoms in adolescents**
 
 Eugenia Giampetruzzi, Jean Rachel Bahk, Chase Antonacci, Ian H. Gotlib
 
