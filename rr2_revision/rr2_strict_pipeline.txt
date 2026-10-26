@@ -1,0 +1,199 @@
+R&R2 PRIMARY PIPELINE — strict new-onset sample
+Run: 2026-10-25 20:09:29 
+
+Previous sample (W2 < 65): N=3296, onsets=168
+Excluded for W1 >= 65: N=173 (onsets among them=35)
+ANALYTIC SAMPLE: N=3123; onsets=133 (4.3%); families=2707; in multi-member families=825 (26.4%)
+
+=== 1. LINEAR (W3 T-score), same-scale W1+W2 covariates, family-clustered SEs, analytic sample ===
+  Total Internalizing          rhr_z    b=0.61 SE=0.15 t=4.02 p=<.001 N=3123
+  Total Internalizing    +CSE  rhr_z    b=0.60 SE=0.15 t=3.93 p=<.001 N=3123
+  Total Internalizing    +CSE  stress_z b=0.26 SE=0.16 t=1.62 p=0.106 N=3123
+  Withdrawn/Depressed          rhr_z    b=0.42 SE=0.09 t=4.60 p=<.001 N=3123
+  Withdrawn/Depressed    +CSE  rhr_z    b=0.40 SE=0.09 t=4.45 p=<.001 N=3123
+  Withdrawn/Depressed    +CSE  stress_z b=0.26 SE=0.10 t=2.69 p=0.007 N=3123
+  Anxious/Depressed            rhr_z    b=0.23 SE=0.08 t=2.97 p=0.003 N=3123
+  Anxious/Depressed      +CSE  rhr_z    b=0.21 SE=0.08 t=2.75 p=0.006 N=3123
+  Anxious/Depressed      +CSE  stress_z b=0.29 SE=0.09 t=3.26 p=0.001 N=3123
+  Somatic Complaints           rhr_z    b=0.21 SE=0.08 t=2.56 p=0.010 N=3123
+  Somatic Complaints     +CSE  rhr_z    b=0.20 SE=0.08 t=2.46 p=0.014 N=3123
+  Somatic Complaints     +CSE  stress_z b=0.15 SE=0.09 t=1.64 p=0.101 N=3123
+
+=== 2. SYMPTOM PROFILES OF INCIDENT CASES ===
+  Incident cases: 133
+# A tibble: 7 × 3
+  pattern                 n   pct
+  <chr>               <int> <dbl>
+1 Withdrawn + Anxious    37  27.8
+2 Anxious only           22  16.5
+3 Withdrawn only         20  15  
+4 All three              19  14.3
+5 Withdrawn + Somatic    13   9.8
+6 Somatic only           12   9  
+7 Anxious + Somatic      10   7.5
+  Two or more subscales elevated: 59.4%; any elevation: 100.0%
+  Any W/D: 66.9%  Any A/D: 66.2%  Any Somatic: 40.6%
+  Mean T: W/D 67.5  A/D 66.1  Somatic 62.8
+
+=== 3. LOGISTIC ONSET (clustered 95% CIs) ===
+  Total Internalizing                    rhr_z    OR=1.29 [1.07, 1.57] p=0.008  N=3123 ev=133 (4.3%)
+  Total Internalizing + CSE              rhr_z    OR=1.28 [1.06, 1.54] p=0.011  N=3123 ev=133 (4.3%)
+                                         stress_z OR=1.29 [1.10, 1.50] p=0.001  N=3123 ev=133 (4.3%)
+  Withdrawn/Depressed                    rhr_z    OR=1.34 [1.11, 1.60] p=0.002  N=3002 ev=144 (4.8%)
+  Withdrawn/Depressed + CSE (joint)      rhr_z    OR=1.32 [1.10, 1.59] p=0.003  N=3002 ev=144 (4.8%)
+                                         stress_z OR=1.12 [0.94, 1.33] p=0.193  N=3002 ev=144 (4.8%)
+  Anxious/Depressed                      rhr_z    OR=1.30 [1.05, 1.59] p=0.014  N=3031 ev=112 (3.7%)
+  Anxious/Depressed + CSE (joint)        rhr_z    OR=1.27 [1.03, 1.57] p=0.023  N=3031 ev=112 (3.7%)
+                                         stress_z OR=1.29 [1.06, 1.56] p=0.010  N=3031 ev=112 (3.7%)
+  Somatic Complaints                     rhr_z    OR=1.13 [0.93, 1.39] p=0.225  N=2927 ev=90 (3.1%)
+  Somatic Complaints + CSE (joint)       rhr_z    OR=1.13 [0.92, 1.39] p=0.248  N=2927 ev=90 (3.1%)
+                                         stress_z OR=1.33 [1.10, 1.60] p=0.003  N=2927 ev=90 (3.1%)
+
+  Onset by RHR quartile (quartile cut points from analytic sample):
+# A tibble: 16 × 6
+   outcome             q         n     k   pct   rhr
+   <chr>               <fct> <int> <int> <dbl> <dbl>
+ 1 Total Internalizing Q1      781    21   2.7  62.4
+ 2 Total Internalizing Q2      781    26   3.3  69.5
+ 3 Total Internalizing Q3      780    33   4.2  74.7
+ 4 Total Internalizing Q4      781    53   6.8  82.3
+ 5 Withdrawn/Depressed Q1      756    25   3.3  62.4
+ 6 Withdrawn/Depressed Q2      751    23   3.1  69.5
+ 7 Withdrawn/Depressed Q3      747    31   4.1  74.7
+ 8 Withdrawn/Depressed Q4      748    65   8.7  82.3
+ 9 Anxious/Depressed   Q1      759    17   2.2  62.4
+10 Anxious/Depressed   Q2      755    24   3.2  69.5
+11 Anxious/Depressed   Q3      763    33   4.3  74.7
+12 Anxious/Depressed   Q4      754    38   5    82.3
+13 Somatic Complaints  Q1      737    15   2    62.4
+14 Somatic Complaints  Q2      748    20   2.7  69.5
+15 Somatic Complaints  Q3      724    24   3.3  74.7
+16 Somatic Complaints  Q4      718    31   4.3  82.3
+
+  Spline (4 knots) nonlinearity test: p = 0.936
+  RHR only (no covariates)               rhr_z    OR=1.40 [1.19, 1.66] p=<.001  N=3123 ev=133 (4.3%)
+
+=== 4. DISCRIMINATION ===
+# A tibble: 6 × 7
+  model                  auc auc_lo auc_hi cv_auc cv_lo cv_hi
+  <chr>                <dbl>  <dbl>  <dbl>  <dbl> <dbl> <dbl>
+1 RHR only             0.603  0.554  0.652  0.592 0.582 0.599
+2 CSE only             0.623  0.576  0.67   0.614 0.604 0.621
+3 Baseline             0.82   0.786  0.855  0.775 0.752 0.79 
+4 Baseline + RHR       0.825  0.791  0.859  0.78  0.756 0.794
+5 Baseline + CSE       0.826  0.793  0.86   0.781 0.757 0.796
+6 Baseline + CSE + RHR 0.83   0.797  0.864  0.786 0.761 0.8  
+  Baseline               -> Baseline + RHR         in-sample DeLong p=0.208 | CV gain=0.005 [0.003, 0.007]
+  Baseline               -> Baseline + CSE         in-sample DeLong p=0.116 | CV gain=0.006 [0.003, 0.008]
+  Baseline + CSE         -> Baseline + CSE + RHR   in-sample DeLong p=0.204 | CV gain=0.004 [0.002, 0.006]
+  Baseline               -> Baseline + CSE + RHR   in-sample DeLong p=0.042 | CV gain=0.010 [0.007, 0.013]
+  RHR only               -> CSE only               in-sample DeLong p=0.561 | CV gain=0.021 [0.012, 0.034]
+
+=== 5. CLINICAL METRICS & CALIBRATION (family-grouped 5-fold CV predictions, full model) ===
+   spec    sens     ppv     npv    base flagged 
+  0.850   0.541   0.138   0.977   0.043   0.167 
+  PPV / base rate = 3.25
+# A tibble: 10 × 7
+   decile     n     k mean_pred   obs    lo    hi
+    <int> <int> <int>     <dbl> <dbl> <dbl> <dbl>
+ 1      1   313     1     0.001 0.003 0.001 0.018
+ 2      2   313     4     0.003 0.013 0.005 0.032
+ 3      3   313     2     0.006 0.006 0.002 0.023
+ 4      4   312     3     0.01  0.01  0.003 0.028
+ 5      5   312     8     0.015 0.026 0.013 0.05 
+ 6      6   312     8     0.022 0.026 0.013 0.05 
+ 7      7   312    10     0.032 0.032 0.018 0.058
+ 8      8   312    19     0.049 0.061 0.039 0.093
+ 9      9   312    25     0.085 0.08  0.055 0.116
+10     10   312    53     0.2   0.17  0.132 0.215
+  Calibration slope = 0.73, intercept-in-large = 0.01
+
+=== 6. cNRI (family bootstrap, B = 1000) ===
+  Total Int: +RHR over CSE model     nri  0.230 [0.055, 0.465] p=0.012
+                                     ev   0.098 [-0.014, 0.265] p=0.090
+                                     ne   0.132 [0.043, 0.230] p=0.002
+  Total Int: RHR-only vs baseline    nri  0.279 [0.075, 0.474] p=0.004
+                                     ev   0.128 [-0.008, 0.262] p=0.080
+                                     ne   0.151 [0.050, 0.240] p=0.004
+  Total Int: CSE-only vs baseline    nri  0.205 [0.037, 0.413] p=0.020
+                                     ev   -0.008 [-0.126, 0.159] p=0.926
+                                     ne   0.212 [0.125, 0.294] p=0.002
+  Total Int: RHR+CSE vs baseline     nri  0.352 [0.138, 0.556] p=<.001
+                                     ev   0.128 [-0.037, 0.289] p=0.136
+                                     ne   0.224 [0.134, 0.308] p=<.001
+  Withdrawn/Depressed : +RHR over CSE nri  0.289 [0.084, 0.494] p=0.010
+                                     ev   0.167 [0.023, 0.301] p=0.026
+                                     ne   0.122 [0.038, 0.213] p=0.002
+  Anxious/Depressed : +RHR over CSE  nri  0.245 [0.012, 0.443] p=0.040
+                                     ev   0.125 [-0.036, 0.267] p=0.142
+                                     ne   0.120 [0.004, 0.229] p=0.036
+  Somatic Complaints : +RHR over CSE nri  0.192 [-0.135, 0.437] p=0.232
+                                     ev   0.111 [-0.121, 0.296] p=0.318
+                                     ne   0.081 [-0.039, 0.176] p=0.204
+
+=== 7. EXTERNALIZING (own-scale W1/W2 < 65 within analytic sample) ===
+  Total Externalizing                    rhr_z    OR=0.95 [0.68, 1.31] p=0.751  N=3044 ev=29 (1.0%)
+  Total Externalizing joint              rhr_z    OR=0.95 [0.69, 1.32] p=0.775  N=3044 ev=29 (1.0%)
+                                         stress_z OR=1.34 [0.94, 1.90] p=0.103  N=3044 ev=29 (1.0%)
+                                         linear b=0.05 SE=0.12 p=0.663
+  Rule-Breaking                          rhr_z    OR=1.37 [0.95, 1.97] p=0.090  N=3041 ev=28 (0.9%)
+  Rule-Breaking joint                    rhr_z    OR=1.32 [0.92, 1.91] p=0.132  N=3041 ev=28 (0.9%)
+                                         stress_z OR=1.70 [1.22, 2.37] p=0.002  N=3041 ev=28 (0.9%)
+                                         linear b=0.06 SE=0.05 p=0.215
+  Aggressive Behavior                    rhr_z    OR=1.08 [0.80, 1.45] p=0.607  N=3029 ev=30 (1.0%)
+  Aggressive Behavior joint              rhr_z    OR=1.04 [0.77, 1.40] p=0.818  N=3029 ev=30 (1.0%)
+                                         stress_z OR=1.57 [1.21, 2.02] p=<.001  N=3029 ev=30 (1.0%)
+                                         linear b=0.06 SE=0.05 p=0.231
+
+  Specificity contrast, internalizing vs externalizing (family bootstrap, B=1000):
+  Total Externalizing  continuous b int=0.61 vs ext=0.05; diff=0.56 [0.29, 0.84] p=<.001 (N=3123)
+  Rule-Breaking        continuous b int=0.61 vs ext=0.06; diff=0.55 [0.28, 0.85] p=<.001 (N=3123)
+  Aggressive Behavior  continuous b int=0.61 vs ext=0.06; diff=0.55 [0.28, 0.84] p=<.001 (N=3123)
+
+=== 8. ROBUSTNESS (PDS, MVPA, ELA) ===
+  ELA columns found: ELA_caregiver_psych, ELA_ses_neighborhood, ELA_primary_caregiver_support, ELA_secondary_caregiver_support, ELA_family_conflict_youth, ELA_caregiver_substance_sep, ELA_family_anger, ELA_family_aggression, ELA_physical_trauma, ELA_caregiver_supervision 
+  Total Int, same N, no pds              rhr_z    OR=1.29 [1.07, 1.57] p=0.008  N=3121 ev=133 (4.3%)
+  Total Int +  pds                       rhr_z    OR=1.30 [1.07, 1.57] p=0.007  N=3121 ev=133 (4.3%)
+                                         pds      OR=0.92 [0.67, 1.28] p=0.633  N=3121 ev=133 (4.3%)
+  Total Int, same N, no mvpa_z           rhr_z    OR=1.29 [1.07, 1.57] p=0.008  N=3123 ev=133 (4.3%)
+  Total Int +  mvpa_z                    rhr_z    OR=1.30 [1.07, 1.57] p=0.007  N=3123 ev=133 (4.3%)
+                                         mvpa_z   OR=1.02 [0.80, 1.31] p=0.851  N=3123 ev=133 (4.3%)
+  Total Int, same N, no ela              rhr_z    OR=1.29 [1.04, 1.61] p=0.020  N=2442 ev=107 (4.4%)
+  Total Int +  ela                       rhr_z    OR=1.28 [1.03, 1.60] p=0.027  N=2442 ev=107 (4.4%)
+                                         ela      OR=2.86 [1.52, 5.36] p=0.001  N=2442 ev=107 (4.4%)
+
+=== 9. TABLE 1 (analytic sample) ===
+  Age W1: 9.96 (0.62) | 8.9–11.0 | n=3123 
+  Age W2: 11.95 (0.65) | 10.8–13.4 | n=3123 
+  Age W3: 14.08 (0.68) | 12.5–15.8 | n=3123 
+  Female: 1,570 (50.3%)
+  ELA: -0.05 (0.39) | -1.7–1.4 | n=2442 
+  PDS: 2.11 (0.70) | 1.0–4.0 | n=3121 
+  CSE: -0.07 (0.60) | -1.0–3.4 | n=3123 
+  RHR: 72.22 (7.83) | 48.3–102.1 | n=3123 
+  Sleep HR: 71.43 (7.81) | 48.4–101.4 | n=2485 
+  Fairly: 24.51 (19.81) | 0.0–126.4 | n=3123 
+  Very: 9.78 (12.77) | 0.0–103.1 | n=3123 
+  MVPA: 34.29 (29.25) | 0.0–181.9 | n=3123 
+  W1 Total Internalizing  46.21 (8.58) | 33.0–64.0 | n=3123
+  W1 Withdrawn/Depressed  52.20 (3.89) | 50.0–77.0 | n=3123
+  W1 Anxious/Depressed    52.09 (3.70) | 50.0–74.0 | n=3123
+  W1 Somatic Complaints   53.77 (4.85) | 50.0–74.0 | n=3123
+  W1 Total Externalizing  43.68 (8.86) | 33.0–77.0 | n=3123
+  W1 Rule-Breaking        51.83 (3.62) | 50.0–74.0 | n=3123
+  W1 Aggressive Behavior  51.70 (3.70) | 50.0–82.0 | n=3123
+  W2 Total Internalizing  45.67 (8.43) | 33.0–64.0 | n=3123
+  W2 Withdrawn/Depressed  52.22 (3.77) | 50.0–79.0 | n=3123
+  W2 Anxious/Depressed    51.85 (3.49) | 50.0–72.0 | n=3123
+  W2 Somatic Complaints   53.63 (4.68) | 50.0–74.0 | n=3123
+  W2 Total Externalizing  42.80 (8.57) | 33.0–78.0 | n=3123
+  W2 Rule-Breaking        51.45 (3.17) | 50.0–76.0 | n=3123
+  W2 Aggressive Behavior  51.48 (3.47) | 50.0–83.0 | n=3123
+  W3 Total Internalizing  45.87 (9.78) | 33.0–86.0 | n=3123
+  W3 Withdrawn/Depressed  53.05 (5.20) | 50.0–100.0 | n=3123
+  W3 Anxious/Depressed    52.23 (4.57) | 50.0–86.0 | n=3123
+  W3 Somatic Complaints   53.46 (4.93) | 50.0–86.0 | n=3123
+  W3 Total Externalizing  42.37 (8.61) | 34.0–79.0 | n=3123
+  W3 Rule-Breaking        51.46 (3.41) | 50.0–90.0 | n=3123
+  W3 Aggressive Behavior  51.39 (3.50) | 50.0–81.0 | n=3123
+  RHR z-score reference: M=72.4 SD=7.8 (scaling sample)

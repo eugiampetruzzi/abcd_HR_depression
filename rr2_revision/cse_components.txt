@@ -1,0 +1,58 @@
+Previous sample (W2 < 65): N=3296, onsets=168
+Excluded for W1 >= 65: N=173 (onsets among them=35)
+ANALYTIC SAMPLE: N=3123; onsets=133 (4.3%); families=2707; in multi-member families=825 (26.4%)
+
+
+Strict sample N = 3123  onsets = 133 
+Non-missing per component:
+    le   peer    fes neighb 
+  3123   3123   3122   3123 
+CSE recomputed check, r with stored index: 1 
+
+Alpha = 0.48, mean inter-item r = 0.19
+Intercorrelations:
+         le peer  fes neighb
+le     1.00 0.32 0.18   0.17
+peer   0.32 1.00 0.22   0.13
+fes    0.18 0.22 1.00   0.15
+neighb 0.17 0.13 0.15   1.00
+Correlation with RHR:
+    le   peer    fes neighb 
+ 0.024 -0.001  0.047  0.081 
+
+Reference: CSE composite 
+   stress_z   OR=1.30 [1.12, 1.51] p=0.001 N=3123
+Reference: RHR + CSE 
+   rhr_z      OR=1.28 [1.06, 1.54] p=0.011 N=3123
+   stress_z   OR=1.29 [1.10, 1.50] p=0.001 N=3123
+
+--- Each component (+ baseline covariates) ---
+Negative life events 
+   le_z       OR=1.15 [0.99, 1.33] p=0.065 N=3123
+Peer victimization 
+   peer_z     OR=1.28 [1.11, 1.48] p=0.001 N=3123
+Family conflict 
+   fes_z      OR=1.17 [0.99, 1.39] p=0.061 N=3122
+Neighborhood danger 
+   neighb_z   OR=1.09 [0.93, 1.27] p=0.272 N=3123
+
+--- Each component jointly with RHR ---
+Negative life events 
+   rhr_z      OR=1.29 [1.07, 1.56] p=0.007 N=3123
+   le_z       OR=1.15 [0.99, 1.34] p=0.065 N=3123
+Peer victimization 
+   rhr_z      OR=1.29 [1.07, 1.56] p=0.009 N=3123
+   peer_z     OR=1.28 [1.10, 1.48] p=0.001 N=3123
+Family conflict 
+   rhr_z      OR=1.29 [1.07, 1.55] p=0.008 N=3122
+   fes_z      OR=1.17 [0.99, 1.38] p=0.073 N=3122
+Neighborhood danger 
+   rhr_z      OR=1.29 [1.06, 1.56] p=0.010 N=3123
+   neighb_z   OR=1.07 [0.91, 1.25] p=0.423 N=3123
+
+--- All four components + RHR (complete cases) --- 
+   rhr_z      OR=1.29 [1.06, 1.56] p=0.010 N=3122
+   le_z       OR=1.03 [0.87, 1.23] p=0.712 N=3122
+   peer_z     OR=1.24 [1.06, 1.45] p=0.007 N=3122
+   fes_z      OR=1.09 [0.91, 1.31] p=0.349 N=3122
+   neighb_z   OR=1.01 [0.85, 1.19] p=0.940 N=3122
