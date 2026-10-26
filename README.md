@@ -1,4 +1,4 @@
-**Passive sensing of resting heart rate predicts the onset of anxious and depressive symptoms in adolescents**
+<img width="468" height="109" alt="image" src="https://github.com/user-attachments/assets/6fd60d45-2059-4759-b727-22c3dcf4456a" />**Passive sensing of resting heart rate predicts the onset of anxious and depressive symptoms in adolescents**
 
 Eugenia Giampetruzzi, Jean Rachel Bahk, Chase Antonacci, Ian H. Gotlib
 
@@ -22,14 +22,7 @@ Eugenia Giampetruzzi, Jean Rachel Bahk, Chase Antonacci, Ian H. Gotlib
 
 ## data
 
-Data are from the **ABCD Study Release 5.1** and are not included in this repository (access requires a signed Data Use Certificate via the NBDC Data Hub).
-
-- Fitbit weekly data: `nt_y_fitb_act_w.csv`
-- CBCL mental health: `mh_p_cbcl.csv`
-- Demographics: `abcd_p_demo.csv`
-- Pubertal development: `ph_p_pds.csv`
-- Early life adversity: pre-scored composite (`ELA_final.csv`, internal file)
-- Pre-built analytic file: `rhr_stress_analytic.csv` (internal)
+The data used in this study are from Release 5.1.1 of the Adolescent Brain Cognitive Development (ABCD) Study and are available to qualified researchers through the NIH Brain Development Cohorts (NBDC) Data Hub (https://doi.org/10.82525/wjkw-bp63).
 
 ---
 
@@ -49,7 +42,7 @@ Data are from the **ABCD Study Release 5.1** and are not included in this reposi
 ## notes
 
 - All models control for Wave 1 and Wave 2 CBCL T-scores, age at Wave 2, sex, and recruitment site.
-- Fitbit quality filter: `fit_ss_meet_abcd_rule == 1`, ≥ 3 valid weeks, RHR 40–120 bpm.
+- Fitbit quality filter: `fit_ss_meet_abcd_rule == 1`, ≥ 3 valid weeks, RHR 40-120 bpm.
 - Clinical threshold: CBCL T ≥ 65 (borderline/clinical range).
 - ABCD timepoints: Wave 1 = baseline, Wave 2 = 2-year follow-up, Wave 3 = 4-year follow-up.
 
